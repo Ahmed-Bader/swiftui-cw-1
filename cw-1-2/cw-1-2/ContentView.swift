@@ -12,7 +12,7 @@ struct ContentView: View {
         ZStack
         {
             Color("background")
-                .ignoresSafeArea()
+            
             VStack()
             {
                 HStack
@@ -20,9 +20,10 @@ struct ContentView: View {
                     Image("kaaba")
                         .resizable()
                         .renderingMode(.template)
-                        .frame(width: 30, height: 30)
                         .foregroundColor(.white)
                         .scaledToFit()
+                        .frame(width: 30, height: 30)
+                    
                     
                     Spacer()
                     
@@ -31,7 +32,7 @@ struct ContentView: View {
                         .frame(width: 30, height: 30)
                 }
                 .padding()
-                            
+                
                 HStack(alignment: .bottom)
                 {
                     Text("2:10")
@@ -40,6 +41,7 @@ struct ContentView: View {
                     Text("10")
                         .font(.system(size: 13, weight: .bold, design: .rounded))
                 }
+                
                 Text("مضى على الأذان")
                     .padding()
                 
@@ -55,8 +57,8 @@ struct ContentView: View {
                 }
                 .padding(.vertical)
                 .background(Color.white.opacity(0.2))
-                    
-                VStack(spacing: 85)
+                
+                VStack(spacing: 70)
                 {
                     HStack
                     {
@@ -150,6 +152,8 @@ struct ContentView: View {
             
             
         }
+        //        .background(Color.blue)
+        .ignoresSafeArea()
         
     }
 }
